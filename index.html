@@ -24,7 +24,7 @@
 
   
   
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
   
 
   
@@ -36,7 +36,7 @@
     <link rel="top" title="VRay_tiled Instructions 1.1.0 documentation" href="#"/> 
 
   
-  <script src="_static/js/modernizr.min.js"></script>
+  <script src="static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -131,7 +131,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+            <a href="sources/index.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -147,12 +147,12 @@
 <span id="id1"></span><h2>1. 进入插件页面：<a class="headerlink" href="#fig-0601" title="Permalink to this headline">¶</a></h2>
 <p>表示插件安装完成后：</p>
 <div class="figure">
-<img alt="_images/selfTest_Vray.png" src="_images/selfTest_Vray.png" />
+<img alt="images/selfTest_Vray.png" src="images/selfTest_Vray.png" />
 </div>
 <p>点击此自定义的快捷方式。
 会弹出如下窗口：</p>
 <div class="figure">
-<img alt="_images/selfTest_Vray_02.png" src="_images/selfTest_Vray_02.png" />
+<img alt="images/selfTest_Vray_02.png" src="images/selfTest_Vray_02.png" />
 </div>
 <p>红框中的路径是目前场景中所有的贴图路径。</p>
 <div class="section" id="id2">
@@ -172,45 +172,45 @@
 <div class="section" id="id4">
 <h3>1. 以工程文件中查找贴图的形式<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <div class="figure">
-<img alt="_images/selfTest_Vray_03.png" src="_images/selfTest_Vray_03.png" />
+<img alt="images/selfTest_Vray_03.png" src="images/selfTest_Vray_03.png" />
 </div>
 <p>表示根据文件中的贴图列表进行贴图的格式转换.</p>
 <div class="figure">
-<img alt="_images/selfTest_Vray_04.png" src="_images/selfTest_Vray_04.png" />
+<img alt="images/selfTest_Vray_04.png" src="images/selfTest_Vray_04.png" />
 </div>
 <p>表示刷新列表中贴图的贴图连接状态和贴图的选择状态。</p>
 <div class="figure">
-<img alt="_images/selfTest_Vray_05.png" src="_images/selfTest_Vray_05.png" />
+<img alt="images/selfTest_Vray_05.png" src="images/selfTest_Vray_05.png" />
 </div>
 <p>只能选择未能连接.exr文件的贴图项。批量选择，便于执行Delete.exr。</p>
 <div class="figure">
-<img alt="_images/selfTest_Vray_06.png" src="_images/selfTest_Vray_06.png" />
+<img alt="images/selfTest_Vray_06.png" src="images/selfTest_Vray_06.png" />
 </div>
 <div class="figure">
-<img alt="_images/selfTest_Vray_07.png" src="_images/selfTest_Vray_07.png" />
+<img alt="images/selfTest_Vray_07.png" src="images/selfTest_Vray_07.png" />
 </div>
 <p>只能选择未转换过.exr文件的贴图项。批量选择，便于执行Create.exr。</p>
 <div class="figure">
-<img alt="_images/selfTest_Vray_08.png" src="_images/selfTest_Vray_08.png" />
+<img alt="images/selfTest_Vray_08.png" src="images/selfTest_Vray_08.png" />
 </div>
 <div class="figure">
-<img alt="_images/selfTest_Vray_09.png" src="_images/selfTest_Vray_09.png" />
+<img alt="images/selfTest_Vray_09.png" src="images/selfTest_Vray_09.png" />
 </div>
 <p>表示的是该渲染文件中存在的贴图文件的数量。</p>
 <div class="figure">
-<img alt="_images/selfTest_Vray_10.png" src="_images/selfTest_Vray_10.png" />
+<img alt="images/selfTest_Vray_10.png" src="images/selfTest_Vray_10.png" />
 </div>
 <p>表示对选择项执行创建.exr文件的操作。
 点击创建时会在原贴图路径下创建后缀为_tiled.exr的文件，且将file节点上的贴图文件替换成转换后的_tiled.exr文件文件。执行结束后点击Refresh即可查看更新后的贴图状态。</p>
 <p><strong>eg :</strong></p>
 <div class="figure">
-<img alt="_images/selfTest_Vray_11.png" src="_images/selfTest_Vray_11.png" />
+<img alt="images/selfTest_Vray_11.png" src="images/selfTest_Vray_11.png" />
 </div>
 <div class="figure">
-<img alt="_images/selfTest_Vray_12.png" src="_images/selfTest_Vray_12.png" />
+<img alt="images/selfTest_Vray_12.png" src="images/selfTest_Vray_12.png" />
 </div>
 <div class="figure">
-<img alt="_images/selfTest_Vray_13.png" src="_images/selfTest_Vray_13.png" />
+<img alt="images/selfTest_Vray_13.png" src="images/selfTest_Vray_13.png" />
 </div>
 <p>表示对选择项执行删除.exr文件的操作。
 点击删除时会先判断选择项文件是否是.exr文件。如果不是.exr文件，存在对应的.exr文件则执行删除。如果是.exr文件，则首先判断路径下是否还存在原格式贴图。原格式贴图文件存在则将file节点上连接上原格式贴图后删除.exr文件即可。若不存在原格式贴图，则保留.exr文件不执行删除操作。执行结束后点击Refresh即可查看更新后的贴图状态。</p>
@@ -218,15 +218,15 @@
 <div class="section" id="id5">
 <h3>2. 以工程文件中查找贴图的形式<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <div class="figure">
-<img alt="_images/selfTest_Vray_14.png" src="_images/selfTest_Vray_14.png" />
+<img alt="images/selfTest_Vray_14.png" src="images/selfTest_Vray_14.png" />
 </div>
 <p>选择 Use Textures in Folder 就是通过指定文件夹进行.exr文件的格式转换。</p>
 <div class="figure">
-<img alt="_images/selfTest_Vray_15.png" src="_images/selfTest_Vray_15.png" />
+<img alt="images/selfTest_Vray_15.png" src="images/selfTest_Vray_15.png" />
 </div>
 <p>选择需要转换贴图的文件夹路径。</p>
 <div class="figure">
-<img alt="_images/selfTest_Vray_16.png" src="_images/selfTest_Vray_16.png" />
+<img alt="images/selfTest_Vray_16.png" src="images/selfTest_Vray_16.png" />
 </div>
 <p>选择则表示文件夹下的子文件内文件也执行创建，反知不执行。</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -287,15 +287,15 @@
             HAS_SOURCE:  true
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="static/jquery.js"></script>
+      <script type="text/javascript" src="static/underscore.js"></script>
+      <script type="text/javascript" src="static/doctools.js"></script>
 
   
 
   
   
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="static/js/theme.js"></script>
   
 
   
